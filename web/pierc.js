@@ -605,11 +605,15 @@ function human_date( date )
 // Nevetheless, escapes HTML control characters.
 function html_escape( string )
 {
-	string = string.replace(/&/g, '&amp;');
-	string = string.replace(/</g, '&lt;');
-	string = string.replace(/>/g, '&gt;');
-	string = string.replace(/\"/g, '&quot;' );
-	string = string.replace(/'/g, '&#x27;' );
-	string = string.replace(/\//g, '&#x2F;');
-	return string;
+	if (string) {
+		string = string.replace(/&/g, '&amp;');
+		string = string.replace(/</g, '&lt;');
+		string = string.replace(/>/g, '&gt;');
+		string = string.replace(/\"/g, '&quot;' );
+		string = string.replace(/'/g, '&#x27;' );
+		string = string.replace(/\//g, '&#x2F;');
+		return string;
+	}
+
+	return '';
 }
