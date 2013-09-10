@@ -1,5 +1,13 @@
+Pierc is a python bot that logs IRC channels, and a PHP/JS interface for browsing said logs.
 
-Copyright (C) 2008-2012  Curtis Lassam
+Installation instructions can be found at http://classam.github.com/pierc/
+
+It depends on python-mysql and Joel Rosdahl's IRC Bot library, both of which are ~GPLv2 - so
+Pierc, too, is GPLv2.
+
+## Licence (LGPL)
+
+Copyright (C) 2008-2013 Curtis Lassam
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
